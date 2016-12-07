@@ -1,0 +1,176 @@
+﻿.move-bmo-topnav { margin-left: 129px; }
+.move-amex-topnav { margin-left: -250px; }
+
+
+.move-bmo-botnav,
+.move-amex-botnav { margin-left: 0; }
+
+.move-bmo-botnav { left: 124px; }
+.move-amex-botnav { left: -120px; }
+/**************** top nav ********************/
+#topnav-why-airmiles a,
+#topnav-choose-bmo a,
+#topnav-choose-amex a
+{ background-image: url(../images/fr/sprite-simple-nav.png); }
+
+header ul { background: url(../images/fr/logo.png) left top no-repeat; }
+
+#logo a { width: 311px; }
+
+#topnav-why-airmiles a { width: 164px; }
+
+#topnav-choose-bmo a { width: 118px;
+background-position: 0 -71px; }
+
+#topnav-choose-amex a { width: 149px;
+background-position: 0 -142px; }
+
+#topnav-why-airmiles a:hover { background-position: 0 -213px; }
+#topnav-choose-bmo a:hover { background-position: 0 -284px; }
+#topnav-choose-amex a:hover { background-position: 0 -355px; }
+
+#topnav-social { width: 93px;
+padding-left: 189px; }
+
+/**************************** nav page on *****************************************/
+#why-airmiles #topnav-why-airmiles a { background-position: 0 -213px; }
+
+#why-airmiles #botnav-why-air-miles a { background-position: 0 -555px; }
+
+#BMOchart #topnav-choose-bmo a,
+#details-bmo #topnav-choose-bmo a,
+#details-bmo-gold #topnav-choose-bmo a
+{ background-position: 0 -284px; }
+
+#details-bmo #botnav-choose-bmo a,
+#details-bmo-gold #botnav-choose-bmo a,
+#BMOchart #botnav-choose-bmo a
+{ background-position: 0 -598px; }
+
+#details-amex #topnav-choose-amex a,
+#details-amex-platinum #topnav-choose-amex a,
+#AMEXchart #topnav-choose-amex a
+{ background-position:  0 -355px;}
+
+#details-amex #botnav-choose-amex a,
+#details-amex-platinum #botnav-choose-amex a,
+#AMEXchart #botnav-choose-amex a
+{ background-position: 0 -641px; }
+
+/************** index **************************/
+#fourcards .title,
+#chart .title,
+.applynow,
+.viewdetails
+{ background-image: url(../images/fr/sprite-simple-nav.png); }
+
+#fourcards .title,
+#chart .title { background-position: 0 -684px; }
+
+#fourcards p { height: 65px; }
+
+.applynow { background-position: 0 -729px; }
+.applynow:hover { background-position: -94px -729px; }
+
+.viewdetails { width: 90px;
+background-position: -3px -757px; }
+
+.viewdetails:hover { background-position: -93px -757px; }
+
+/************** chart **************************/
+.thechart h1 { background: url(../images/fr/chart-title.png) left top no-repeat; }
+
+#chart-border h3 { letter-spacing: -0.25px; }
+
+.thechart #hero p  { font-size: 14px;
+line-height: 16px;
+width: 173px; }
+
+/************** details **************************/
+.details-wrapper .title,
+.btns a,
+#BMO-learn,
+#BMO-learn a
+{ background-image: url(../images/fr/sprite-detailsFR.png); }
+
+.details-wrapper { /*height: 720px;*/
+height: auto; }
+
+#details-BMO-gold { height: auto; }
+
+#details-BMO { height: 700px;}
+
+#details-BMO .title { background-position: 0 0px; }
+#details-BMO-gold .title { background-position: 0 -45px; }
+#details-AMEX .title { background-position: 0 -135px; }
+#details-AMEX-platinum .title { background-position: 0 -90px; }
+
+.back-btn { background-position: 0 -182px; }
+.back-btn:hover { background-position: -78px -182px; }
+.apply-btn { background-position: 0 -211px; }
+.apply-btn:hover { background-position: -129px -211px; }
+
+#BMO-learn { width: 675px;
+background-position: 0 -250px; }
+#BMO-learn a { background-position: 0 -387px;
+bottom: 19px; }
+#BMO-learn a:hover { background-position: -94px -387px; }
+
+/************** why arimiles ********************/
+#why-airmiles .intro { margin-bottom: 20px;
+width: 915px; }
+
+#why-airmiles .intro h2,
+.sections
+{ background-image: url(../images/fr/sprite-whyairmilesFR.png);
+background-repeat: no-repeat; }
+
+#why-airmiles .intro h2 { background-position: 0 -1008px;
+width: 915px;
+height: 31px; }
+
+#section1 { background-position: 0 -26px; }
+
+#section1 p { width: 447px;
+right: 40px; }
+
+#section2 { background-position: 0 -250px;
+height: 260px; }
+
+#section2 p  { width: 520px;
+left: 225px;
+top: 87px; }
+
+#section2 .linkage { left: 228px; }
+
+#section3 { background-position: 0 -511px; }
+
+.amex-first { background-position: 0 -719px !important; }
+
+
+/************** footer **************************/
+footer { background: url(../images/fr/simple-footer-bg.png) left top no-repeat; }
+
+footer ul { width: 403px; }
+
+.footertitle { width: 713px;
+height: 44px;
+background: url(../images/fr/sprite-detailsFR.png) 0 -342px no-repeat; }
+
+#botnav-why-air-miles a,
+#botnav-choose-bmo a,
+#botnav-choose-amex a 
+{ background-image: url(../images/fr/sprite-simple-nav.png); }
+
+#botnav-why-air-miles a { width: 164px;
+background-position: 0 -426px; }
+
+#botnav-choose-bmo a { width: 118px;
+background-position: 0 -469px; }
+
+#botnav-choose-amex a { width: 121px;
+background-position: 0 -512px; }
+
+#botnav-why-air-miles a:hover { background-position: 0 -555px; }
+#botnav-choose-bmo a:hover { background-position: 0 -598px; }
+#botnav-choose-amex a:hover { background-position: 0 -641px; }

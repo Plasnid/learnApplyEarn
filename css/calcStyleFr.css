@@ -1,0 +1,555 @@
+textarea, input { 
+	outline: none; 
+}
+:focus { 
+	-moz-outline-style: none; 
+}
+a, input:focus, select:focus {
+	outline: none !important; 
+}
+/*clearfix*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+/*clearfix end*/
+input, textarea, select, a { 
+	outline: none !important; 
+}
+select sup{
+	font-size: .5em;
+	font-color: red;
+}
+div#calculator{
+	/*border: 1px solid black;*/
+	width:800px;
+	height:562px;
+	background-image: url("../img/calculator/calc_background_FR.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+div#calculator select{
+	font-size: .6em;
+}
+div#calculatormain{
+	font-family: arial, sans-serif;
+	width: 980px;
+	color: #013353;
+	position: relative;
+	margin: 0 auto;
+}
+p#findout{
+	padding:29px 0 0 0;
+	font-weight: normal;
+	font-size: .9em;
+	color:#fff;
+}
+/*css for the intro*/
+#calcintro{
+	text-align: center;
+	margin: 10px 0;
+}
+#calcintro p{
+	font-size: .7em;
+	margin:0;
+	padding:0;
+}
+/*form width*/
+#calculatorForm{
+	/*display:inline-block;*/
+	float:left;
+	margin: 0 10px 0 13px;
+	width: 291px;
+}
+/*top of the form*/
+#calculatorFormTop{
+	text-align: center;
+	font-size: .8em;
+	margin: 0 0 20px;
+}
+/*calculator dropdown stying*/
+#cardSelect{
+	margin: 0 0 0 26px;
+	width: 267px;
+}
+#provdrop{
+	margin: 0 0 0 28px;
+	width: 200px;
+}
+/*the slider inputs*/
+.ui-slider .ui-slider-handle{
+    width:15px; 
+    height:14px; 
+    background:url(../img/calculator/dot.png) no-repeat; overflow: hidden; 
+    position:absolute;
+    top: -3px;
+    border-style:none; 
+}
+.ui-widget-header {
+background:url(../img/calculator/rail.png) 50% 50%;
+height:2px;
+left:1px;
+top:1px;
+position:absolute;
+}
+.spendSlider{
+	margin: 0 0 3px 0;
+}
+.spendSlider h2{
+	display:inline-block;
+	position: relative;
+	top: -9px;
+	
+}
+#groceryInput{
+	background-image:url(../img/calculator/sliderBgGrocery.png);
+	width: 285px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+#groceryInput h2{
+	margin: 0 0 0 77px;
+}
+#groceryInput .slideHolder{
+	margin: 0 0 0 24px;
+}
+#pharmacyInput{
+	background-image:url(../img/calculator/sliderBgPharma.png);
+	width: 285px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+#pharmacyInput h2{
+	margin: 0 0 0 80px;
+}
+#pharmacyInput .slideHolder{
+	margin: 0 0 0 12px;
+}
+
+/*gas*/
+#gasInput{
+	background-image:url(../img/calculator/sliderBgGas.png);
+	width: 285px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+#gasInput h2{
+	margin: 0 0 0 79px;
+}
+#gasInput .slideHolder{
+	margin: 0 0 0 22px;
+}
+/*hardware*/
+#hardwareInput{
+	background-image:url(../img/calculator/sliderBgHardware.png);
+	width: 285px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+#hardwareInput h2{
+	margin: 0 0 0 81px;
+}
+#hardwareInput .slideHolder{
+	margin: 0 0 0 3px;
+}
+/*liquor*/
+#liquorInput{
+	background-image:url(../img/calculator/sliderBgLiquor.png);
+	width: 285px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+#liquorInput h2{
+	margin: 0 0 0 82px;
+}
+#liquorInput .slideHolder{
+	margin: 0 0 0 28px;
+}
+/*other*/
+#otherInput{
+	background-image:url(../img/calculator/sliderBgOther.png);
+	width: 285px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+#otherInput h2{
+	margin: 0 0 0 57px;
+}
+#otherInput .slideHolder{
+	margin: 0 0 0 23px;
+}
+/**/
+div.slideVal{
+	position:absolute;
+	margin: 0 0 0 -20px;
+	width: 35px;
+}
+
+
+.slideVal p{
+	margin: 3px auto 0;
+	padding: 0;
+	text-align: center;
+}
+/*calculator question labels*/
+.slideHolder{
+	display:inline-block;
+	margin: 0 0 0 10px;
+	padding:0;
+	position: relative;
+}
+.qlabel p{
+	display:inline;
+	font-size: 0.7em;
+	margin: 0;
+	padding:0;
+	position: relative;
+	top: -5px;
+	left: 5px;
+}
+.sliderlabel{
+	font-size: .7em;
+}
+#slider { 
+	margin: 10px; 
+}
+.sliderControl{
+	width: 130px;
+	/*margin:0 0 0 134px;*/
+	margin: 15px 0 0 0;
+	padding: 0 0 0 0;
+	background-image: url(../img/calculator/rail.png);
+	background-color: transparent;
+	border: none;
+}
+#calculatorForm img.hr{
+	display: block;
+	margin:5px auto;
+	padding:0;
+}
+.slideVal{
+	display:block;
+	font-size: .5em;
+	margin:0;
+	padding:0;
+}
+.rangeHolder{
+	display:block;
+	margin:0;
+	padding:0;
+	line-height: .3em;
+}
+.rangeHolder p{
+	margin:0;
+	padding:0;
+}
+.rangenums{
+	display:inline-block;
+	font-size: .5em;
+}
+.numMax.rangenums{
+	margin-left: 97px;
+}
+#oftenshop{
+	margin: 0 0 0 27px;
+}
+/*display bars*/
+.sliderControl{
+	font-size:62.5%;
+}
+#calculatorContent{
+	display:block;
+	padding:0;
+	margin:0;
+}
+#barGraph{
+	position:relative;
+	float:left;
+	width: 279px;
+	height: 433px;
+	background-image: url("../img/calculator/bargraphBG.png");
+	background-repeat:no-repeat;
+	margin-top: 5px;
+}
+#barGraph img{
+	display: block;
+}
+#bargraphTitle{
+	margin: 0 auto;
+	padding-top: 10px;
+}
+div.barchart{
+	display:inline-block;
+	width: 68px;
+	height: 2px;
+	padding:0;
+	margin:0;
+	position:absolute;
+	bottom: 0;
+}
+img.barchart{
+	display:inline-block;
+	height: 324px;
+	position:absolute;
+	bottom:0;
+}
+/*#nicebar{*/
+#cardBarBase{
+	background-image: url("../img/calculator/barBottomTotal_fr.png");
+	height: 38px;
+	margin: 0 auto;
+	margin-top: 330px;
+	width: 251px;
+}
+#cardBarBase p{
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	margin:0 0 0 96px;
+	padding:0;
+	position:relative;
+	top:4px;
+	left:2px;
+}
+.barHolder{
+	position:relative;
+	top: 330px;
+}
+.bar1{
+	background-image:url(../img/calculator/cardAirmiles.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+/*amex fee bars*/
+.amexFee .bar1{
+	background-color:#0A4363;
+	left:40px;
+}
+.amexFee .bar1 span,.amexNoFee .bar1 span,.bmoNoFee .bar1 span,.bmoNoFee .bar2 span,.bmoFee .bar1 span,.bmoFee .bar3 span{
+	background-image:url(../img/calculator/milesTopperBlue_fr.png);
+	background-position: bottom;
+	background-repeat:no-repeat;
+	height: 26px;
+    left: -8px;
+    top: -36px;
+    width: 85px;
+}
+.bmoFee .bar3 span{
+	background-image:url(../img/calculator/milesTopperGrey_fr.png);
+}
+.amexFee .bar1 span p,.amexNoFee .bar1 span p,.bmoNoFee .bar1 span p,.bmoNoFee .bar2 span p,.bmoFee .bar1 span p,.bmoFee .bar3 span p{
+	font-weight: bold;
+	font-size: 1em;
+	color:#4EAEDC;
+}
+.bmoFee .bar3 span p{
+	color:#C3C7C9;
+}
+.amexFee .vrplus{
+	left:139px;
+}
+.amexFee .bar2{
+	left: 172px;
+	background-color:#C3C7C9;
+	background-image:url(../img/calculator/cardAmexFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+}
+.amexFee .bar2 span,.amexNoFee .bar2 span{
+	background-image:url(../img/calculator/milesTopperGrey_fr.png);
+	background-position: bottom;
+	background-repeat:no-repeat;
+	height: 24px;
+    left: -8px;
+    top: -35px;
+    width: 87px;
+}
+.amexFee .bar2 span p,.amexNoFee .bar2 span p{
+	font-weight: bold;
+	font-size: 1em;
+	color:#C3C7C9;
+}
+.amexFee .vr{
+	visibility:hidden;
+}
+.amexFee .bar3{
+	visibility: hidden;
+}
+/*amex no fee bars*/
+.amexNoFee .bar1{
+	background-color:#0A4363;
+	left:40px;
+}
+.amexNoFee .vrplus{
+	left:139px;
+}
+.amexNoFee .bar2{
+	left: 172px;
+	background-color:#C3C7C9;
+	background-image:url(../img/calculator/cardAmexNoFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.amexNoFee .vr{
+	visibility:hidden;
+}
+.amexNoFee .bar3{
+	visibility: hidden;
+}
+/*bmo fee bars*/
+.bmoFee .bar1{
+	background-color:#0A4363;
+	left:12px;
+}
+.bmoFee .vrplus{
+	left:92px;
+}
+.bmoFee .bar2{
+	left: 107px;
+	background-color:#0A4363;
+	background-image:url(../img/calculator/cardBmoFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.bmoFee .vr{
+	left:186px;
+}
+.bmoFee .bar3{
+	left:199px;
+	background-color:#C3C7C9;
+	background-image:url(../img/calculator/cardBmoNoFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+/*bmo no fee bars*/
+.bmoNoFee .bar1{
+	background-color:#0A4363;
+	left:12px;
+}
+.bmoNoFee .vrplus{
+	left:92px;
+}
+.bmoNoFee .bar2{
+	left: 107px;
+	background-color:#0A4363;
+	background-image:url(../img/calculator/cardBmoNoFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.bmoNoFee .vr{
+	left:186px;
+}
+.bmoNoFee .bar3{
+	left:199px;
+	background-color:#C3C7C9;
+	background-image:url(../img/calculator/cardBmoFee.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.bmoFee .bar2 span, .bmoNoFee .bar3 span{
+	background-image:url(../img/calculator/flightSavingsGrey_fr.png);
+	background-position: bottom;
+	background-repeat:no-repeat;
+	height: 81px;
+    left: -7px;
+    top: -85px;
+    width: 83px;
+}
+.bmoFee .bar2 span{
+	background-image:url(../img/calculator/bmoWorldTopper_fr.png);
+}
+.bmoFee .bar2 span.bartext p,.bmoNoFee .bar3 span.bartext p{
+	font-weight: bold;
+	margin-top:51px;
+	font-size: 1em;
+	color:#C3C7C9;
+}
+.bmoFee .bar2 span.bartext p{
+	color:#4EAEDC;
+}
+/*bar text*/
+span.bartext{
+	position:relative;
+	/*top:-17px;
+	width:68px;*/
+	display:inline-block;
+	text-align:center;
+}
+.bartext p{
+	margin:-6px 0 0 10px;
+	padding:0;
+	width: 68px;
+	text-align: center;
+}
+/*display ads*/
+#barAds{
+	/*background-image:url(../img/mcAdsColumn_en.png);*/
+	background-repeat: no-repeat;
+	width:180px;
+	height: 433px;
+	text-align: center;
+	float:left;
+	margin:5px 0 0 12px;
+	padding:0;
+}
+.bmo#barAds{
+	background-image:url(../img/calculator/mcAdsColumn_fr.png);
+}
+.amex#barAds{
+	background-image:url(../img/calculator/amexAdsColumn_fr.png);	
+}
+#bmoCalcSalesLine, #amexNoFeeCalcSalesLine, #amexFeeCalcSalesLine{
+	color: #4EAEDC;
+	font-size: 0.9em;
+	margin: 16px 0 0;
+	padding: 0;
+	text-align: center;
+}
+#amexCalcSalesLine{
+	color: #4EAEDC;
+	font-size: 0.9em;
+	margin: 16px 0 0;
+	padding: 0;
+	text-align: center;
+}
+#amexCalcSalesLine p, #amexCalcSalesLine img{
+	margin:0;
+	padding:0;
+	display: inline-block;
+}
+#amexCalcSalesLine img{
+	margin: 0 5px;
+}
+#calcSalesLeadout{
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+#calcSalesLeadout p{
+	margin: 10px 0;
+	padding:0;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #fff;
+}
+/* turn off unneed legal */
+.provinceLegal{
+	display:none;
+}

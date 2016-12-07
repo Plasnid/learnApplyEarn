@@ -1,0 +1,866 @@
+@charset "utf-8";
+/*  HTML5 Boilerplate  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, 
+menu, nav, section, summary, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+body, select, input, textarea {   color: #444; }
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+
+nav ul, nav li { margin: 0; } 
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre {  padding: 15px;  white-space: pre;  white-space: pre-wrap;  white-space: pre-line;  word-wrap: break-word; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red;  box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; } 
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px);  clip: rect(1px, 1px, 1px, 1px); }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after {  content: "\0020"; display: block; height: 0; visibility: hidden;	 } 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+ /* Primary Styles
+    Author: 
+ */
+
+/**************************** shared *****************************************/ 
+html { background: #021a38 url(../images/bg-html.jpg) left top repeat-x;
+font-family: arial,helvetica,sans-serif; }
+
+.centerit { position: relative;
+margin: 0 auto; } 
+
+.removetext { text-indent: -9999px; }
+
+.no-style { list-style: none;
+margin: 0;
+padding: 0; } 
+
+header nav,
+footer nav 
+{ margin-top: -16px; }
+ 
+sup { font-size: 9px; } 
+
+/***** DELETE THIS *********/
+#test { position: absolute;
+top: 10px;
+left: 10px;
+display: none; }
+
+.move-bmo-topnav,
+.move-bmo-botnav { margin-left: 152px; }
+
+.move-amex-topnav,
+.move-amex-botnav { margin-left: -308px; }
+
+
+/**************************** topnav *****************************************/
+
+header { background-color: #011938; }
+
+header ul { overflow: hidden;
+height: 71px;
+background: url(../images/logo.png) left top no-repeat;
+width: 1024px; }
+
+header li { float: left; }
+
+header a { display: block;
+height: 71px;
+text-indent: -9999px;
+background: url(../images/sprite-simple-nav.png) left top no-repeat; }
+
+#logo a { width: 272px;
+background: none; }
+
+#topnav-why-airmiles a { width: 170px;
+background-position: 0 0px; }
+
+#topnav-choose-bmo a { width: 152px;
+background-position: 0 -142px; }
+
+#topnav-choose-amex a { width: 154px;
+background-position: 0 -284px; }
+
+#topnav-choose-bmo, #topnav-choose-amex { position: relative; }
+
+#topnav-social { width: 85px;
+padding-left: 177px;
+background: none;
+padding-top: 15px;
+height: 56px;
+background-position: 0 -497px;
+position: relative;
+text-align: center; }
+
+header #topnav-social a { background: none;
+display: inline;
+text-indent: 0;
+color: #02d0fd;
+font-size: 11px;
+letter-spacing: -0.8px;
+text-transform: uppercase;
+text-decoration: none; }
+
+#choose-language:hover { color: #fff; }
+
+#social { margin-top: 5px; }
+
+header #topnav-social #social a { background-image: url(../images/sprite-social-icons.png);
+background-repeat: no-repeat;
+display: inline-block; }
+
+header #topnav-social #social #icon-community { background-position: 0 0;
+width: 22px;
+height: 22px; }
+
+header #topnav-social #social #icon-facebook { background-position: 0 -22px;
+width: 23px;
+height: 22px; }
+
+header #topnav-social #social #icon-twitter { background-position: 0 -44px;
+width: 24px;
+height: 23px; }
+
+#topnav-why-airmiles a:hover { background-position: 0 -71px; }
+#topnav-choose-bmo a:hover { background-position: 0 -213px; }
+#topnav-choose-amex a:hover { background-position: 0 -355px; }
+
+/**************************** nav page on *****************************************/
+#why-airmiles #topnav-why-airmiles a { background-position: 0 -71px; }
+
+#why-airmiles #botnav-why-air-miles a { background-position: 0 -583px; }
+
+#BMOchart #topnav-choose-bmo a,
+#details-bmo #topnav-choose-bmo a,
+#details-bmo-gold #topnav-choose-bmo a
+{ background-position: 0 -213px; }
+
+#details-bmo #botnav-choose-bmo a,
+#details-bmo-gold #botnav-choose-bmo a,
+#BMOchart #botnav-choose-bmo a
+{ background-position: 0 -669px; }
+
+#details-amex #topnav-choose-amex a,
+#details-amex-platinum #topnav-choose-amex a,
+#AMEXchart #topnav-choose-amex a
+{ background-position:  0 -355px;}
+
+#details-amex #botnav-choose-amex a,
+#details-amex-platinum #botnav-choose-amex a,
+#AMEXchart #botnav-choose-amex a
+{ background-position: 0 -755px; }
+
+/*
+
+FULL NAV 
+
+header ul { overflow: hidden;
+width: 1024px; }
+
+header li { float: left; }
+
+header a { display: block;
+height: 71px;
+text-indent: -9999px;
+background: url(../images/sprite-nav.jpg) left top no-repeat; }
+
+#logo a { width: 265px; }
+
+#topnav-why-airmiles a { width: 123px;
+background-position: 0 -71px; }
+
+#topnav-choose-bmo a { width: 107px;
+background-position: 0 -355px; }
+
+#topnav-choose-amex a { width: 107px;
+background-position: 0 -213px; }
+
+#topnav-earn-calculator a { width: 136px;
+background-position: 0 -497px; }
+
+#topnav-how-it-adds-up a { width: 120px;
+background-position: 0 -639px; }
+
+#topnav-social { width: 158px;
+background: url(../images/sprite-nav.jpg) left top no-repeat;
+padding-top: 15px;
+height: 56px;
+background-position: 0 -781px;
+position: relative;
+text-align: center; }
+
+header #topnav-social a { background: none;
+display: inline;
+text-indent: 0;
+color: #02d0fd;
+font-size: 11px;
+letter-spacing: -0.8px;
+text-transform: uppercase;
+text-decoration: none; }
+
+#social { margin-top: 5px; }
+
+header #topnav-social #social a { background-image: url(../images/sprite-social-icons.png);
+background-repeat: no-repeat;
+display: inline-block; }
+
+header #topnav-social #social #icon-community { background-position: 0 0;
+width: 22px;
+height: 22px; }
+
+header #topnav-social #social #icon-facebook { background-position: 0 -22px;
+width: 23px;
+height: 22px; }
+
+header #topnav-social #social #icon-twitter { background-position: 0 -44px;
+width: 24px;
+height: 23px; }
+
+#topnav-why-airmiles a:hover { background-position: 0 -142px; }
+#topnav-choose-bmo a:hover { background-position: 0 -426px; }
+#topnav-choose-amex a:hover { background-position: 0 -284px; }
+#topnav-earn-calculator a:hover { background-position: 0 -568px; }
+#topnav-how-it-adds-up a:hover { background-position: 0 -710px; }
+*/
+
+/**************************** homepage *****************************************/
+#scroller { width: 1024px;
+height: 397px;
+overflow: hidden;
+position: relative;
+z-index: 1000; }
+
+#scrollable { width: 5200px;
+position: absolute;
+left: 0;
+top: 0;
+z-index: 1; }
+
+#scroll-num { overflow: hidden;
+height: 19px;
+position: absolute;
+right: 146px;
+bottom: 10px;
+z-index: 100; }
+
+#scroll-num li { float: left; }
+
+#scroll-num a { width: 19px;
+height: 19px;
+margin: 0 2px;
+display: block;
+background-image: url(../images/sprite-slider-numbers.png);
+background-repeat: no-repeat; }
+
+.flash-container { width: 1024px;
+height: 397px;
+float: left;
+text-align: center; }
+
+#slide-num1 a { background-position: 0 0px; }
+#slide-num2 a { background-position: 0 -19px; }
+#slide-num3 a { background-position: 0 -38px; }
+#slide-num4 a { background-position: 0 -57px; }
+#slide-num5 a { background-position: 0 -76px; }
+
+#slide-num1 a:hover, 
+#slide-num1 .slide-on { background-position: 0 -95px; }
+
+#slide-num2 a:hover, 
+#slide-num2 .slide-on { background-position: 0 -114px; }
+
+#slide-num3 a:hover, 
+#slide-num3 .slide-on { background-position: 0 -133px; }
+
+#slide-num4 a:hover, 
+#slide-num4 .slide-on { background-position: 0 -152px; }
+
+#slide-num5 a:hover, 
+#slide-num5 .slide-on { background-position: 0 -171px; }
+
+#fourcards .title,
+#chart .title,
+#box-container,
+.box div,
+.box div img,
+#fourcards .img,
+.applynow,
+.viewdetails
+{ background-image: url(../images/sprite-landingpage-elements.png);
+background-repeat: no-repeat; }
+
+#fourcards { width: 714px;
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+margin-bottom: 25px; }
+
+#fourcards .title,
+#chart .title
+{ height: 45px;
+background-position: 0 -37px; }
+
+#box-container { overflow: hidden;
+background-position: 10px -493px;
+margin-top: 16px; }
+
+.box { overflow: hidden;
+background-position: 0 -493px;
+float: left;
+ }
+
+.box div { float: left;
+background-position: 172px -493px;
+text-align: center;
+width: 155px;
+padding: 0 8px 0 11px; }
+
+.floatitleft { float: left;
+margin-left: 9px; }
+.floatitright { float: right;
+margin-right: 9px; }
+
+#fourcards .img { width: 146px;
+height: 92px;
+margin-bottom: 10px; }
+
+#BMO-gold .img { background-position: 0 -85px; }
+
+#BMO .img { background-position: 0 -181px; }
+
+#AMEX-platinum .img { background-position: 0 -276px; }
+
+#AMEX .img { background-position: 0 -370px; }
+
+#fourcards a { display: block; }
+
+#fourcards p { font-size: 14px;
+height: 65px;
+color: #fff; }
+
+.applynow, .viewdetails { position: relative;
+display: block;
+text-decoration: none;
+margin: 0 auto; }
+
+.applynow { background-position: 0 -462px;
+width: 94px;
+height: 21px;
+margin-bottom: 7px; }
+
+.applynow:hover { background-position: -94px -462px; }
+
+.viewdetails { background-position: 0 -483px;
+width: 76px;
+height: 10px; }
+
+.viewdetails:hover { background-position: -75px -483px; }
+
+/**************************** BMOchart *****************************************/
+.thechart h1,
+.hero-img,
+.chartimg
+{ background-image: url(../images/sprite-chart.png);
+background-repeat: no-repeat; }
+
+.thechart h1 { width: 709px;
+height: 113px;
+background-position: 0 0;
+margin-top: 10px; }
+
+.thechart #hero p { font-size: 20px;
+color: #01395a;
+width: 177px;
+text-align: center;
+position: relative;
+top: 11px; }
+
+.thechart #hero { overflow: hidden;
+width: 793px;
+margin-top: 15px; }
+
+.hero-img { width: 423px;
+height: 235px;
+margin: 0 8px; }
+
+.thechart #hero p, .hero-img { float: left; }
+
+#chart { width: 714px; }
+
+#chart-border { width: 711px;
+border-left: 1px solid #000;
+border-right: 1px solid #000;
+background: #fff url(../images/chart-border-bg.jpg) bottom left repeat-x; }
+
+#chart-border ul { overflow: hidden;
+margin: 0px auto 0 auto;
+padding-top: 20px;
+*padding-bottom: 100px; /* ie6 fix */
+width: 648px; }
+
+#chart-border li { border-bottom: 1px solid #9e9e9e;
+overflow: hidden; }
+
+#chart-border .bullets { width: 100%;
+padding: 0;
+margin: 0 0 0 10px;
+list-style: disc outside none;
+overflow: visible; }
+
+#chart-border .bullets li { border: 0;
+font-size: 9px;
+overflow: visible; }
+
+.info { padding: 18px 25px 13px 25px;
+float: left; 
+width: 271px; }
+
+#chart-border .top .info { padding-top: 0; }
+
+#chart-border .bottom { border-bottom: 0; }
+
+#chart-border .bottom .info { padding-bottom: 73px;
+margin-bottom: 100px;
+position: relative; }
+
+#chart-border .bottom .info .applynow { position: absolute;
+bottom: -20px;
+left: 115px; }
+
+#chart-border h3 { text-align: center;
+margin: 12px 0 15px 0; }
+
+#chart-border h5 { font-size: 12px;
+color: #1d9ae9;
+margin-bottom: 16px; }
+
+#chart-border .top h5 { margin-top: 17px; }
+
+#chart-border p { font-size: 12px;
+margin-bottom: 5px;
+color: #000; }
+
+#chart-border p a { color: #000; }
+
+.rborder { border-right: 1px solid #9e9e9e; }
+
+.chartimg { width: 137px;
+height: 89px; }
+
+#legal { width: 893px;
+color: #6ebedf;
+padding-bottom: 30px;
+font-size: 11px; }
+
+#legal li { margin-bottom: 18px;
+list-style-position: outside; }
+
+#legal p { margin: 0 0 10px 0px; }
+
+#legal a,
+#legal a:visited { color: #fff; }
+
+#legal a:hover { color: #ccc; }
+
+#BMOchart .hero-img { background-position: 0 -113px; }
+#AMEXchart .hero-img { background-position: 0 -530px; }
+
+#chartimg-BMOgold { background-position: 0px -348px; }
+#chartimg-BMO { background-position: 0px -441px; }
+
+#chartimg-AMEX-platinum { background-position: 0px -857px; }
+#chartimg-AMEX { background-position: 0px -765px; }
+
+
+
+/**************************** details *****************************************/
+
+.details-wrapper .title,
+#details-img-BMO,
+#details-img-BMO-gold,
+#details-img-AMEX,
+#details-img-AMEX-platinum,
+.btns a,
+#BMO-learn,
+#BMO-learn a 
+{ background-image: url(../images/sprite-detailspage.png);
+background-repeat: no-repeat; }
+
+.details-wrapper { margin-top: 16px;
+height: 665px; }
+
+.details-wrapper .title { width: 713px;
+height: 45px; }
+
+#details-AMEX-platinum { height: auto; }
+
+#thedetails { border: 3px solid #fff;
+border-top: 0;
+padding: 13px 41px 13px 26px;
+width: 640px;
+overflow: hidden;
+border-radius: 0 0 10px 10px;
+box-shadow: 3px 3px 5px #999;
+background-color: #e2e4e5;
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(226,228,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(90%,rgba(255,255,255,1)), color-stop(100%,rgba(226,228,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(226,228,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(226,228,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(226,228,229,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(226,228,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e4e5',GradientType=0 ); /* IE6-9 */
+ }
+
+#topbox { overflow: hidden;
+margin-bottom: 16px; }
+
+#topbox div { width: 184px;
+height: 119px;
+margin-right: 14px; }
+
+#thedetails #topbox p { width: 442px;
+margin-left: 0; }
+
+#thedetails p,
+#thedetails li { color: #7a7b7b;
+font-size: 13px; }
+
+#thedetails p { margin-left: 42px; }
+
+#thedetails ul { margin: 8px 0 19px 69px; }
+
+#thedetails li { margin-bottom: 8px;
+letter-spacing: -0.15px; }
+
+#topbox div, #topbox p { float: left; }
+
+.btns { overflow: hidden;
+position: relative;
+margin-bottom: 10px; }
+
+.btns a { display: block;
+height: 28px; }
+
+.back-btn { width: 78px;
+background-position: 0 0;
+margin: 0 293px 0 80px; }
+
+.back-btn:hover { background-position: -78px 0; }
+
+.apply-btn { width: 128px;
+background-position: 0 -28px; }
+
+.apply-btn:hover { background-position: -128px -28px; }
+
+.back-btn, .apply-btn { float: left; }
+
+#details-legal { border-top: 1px solid #bdbcbc;
+padding: 12px 0; }
+
+#details-legal p,
+#details-legal li { font-size: 10px;
+margin-bottom: 10px; 
+margin-left: 0; }
+
+#thedetails #details-legal p { font-size: 10px;
+color: #7a7b7b; }
+
+#BMO-learn { width: 672px;
+height: 86px;
+position: relative;
+background-position: 0 -755px; }
+
+#BMO-learn a { display: block;
+position: absolute;
+right: 12px;
+bottom: 24px;
+width: 95px;
+height: 23px;
+background-position: 0 -728px; }
+
+#BMO-learn a:hover { background-position: -95px -728px; }
+
+#details-BMO .title { background-position: 0 -56px; }
+#details-img-BMO { background-position: 0 -101px; }
+#details-BMO #topbox p { margin-top: 38px; }
+
+#details-BMO-gold { height: auto; }
+#details-BMO-gold .title { background-position: 0 -220px; }
+#details-img-BMO-gold { background-position: 0 -265px; }
+#details-BMO-gold #topbox p { margin-top: 24px; }
+
+#details-AMEX { height: auto; }
+#details-AMEX .title { background-position: 0 -548px; }
+#details-img-AMEX { background-position: 0 -593px; }
+#details-AMEX #topbox p { margin-top: 50px; }
+
+#details-AMEX-platinum .title { background-position: 0 -384px; }
+#details-img-AMEX-platinum { background-position: 0 -429px; }
+#details-AMEX-platinum #topbox p { margin-top: 24px; }
+
+/**************************** why airmiles *****************************************/
+#why-airmiles .intro h2,
+.sections,
+.amex-first
+{ background-image: url(../images/sprite-whyairmiles.png);
+background-repeat: no-repeat; }
+
+#why-airmiles .intro { width: 873px;
+margin-bottom: 35px; }
+
+#why-airmiles .intro  h2 { width: 873px;
+height: 27px;
+margin: 26px 0 22px 0;
+background-position: 0 0; }
+
+#why-airmiles .intro p { color: #000;
+font-size: 13px; }
+
+.sections { width: 982px;
+position: relative; }
+
+.sections p { font-size: 13px;
+color: #000; 
+position: absolute; }
+
+.sections a { color: #0072cf; }
+
+.sections .linkage { position: absolute; }
+
+#section1 { height: 226px;
+background-position: 0 -27px; }
+
+#section1 p { right: 67px;
+top: 119px; }
+
+#section2 { height: 268px;
+margin: 27px auto 47px auto;
+background-position: 0 -253px; }
+
+#section2 p { width: 495px; 
+top: 104px;
+left: 249px; }
+
+#section2 .linkage { left: 249px;
+top: 220px; }
+
+#section3 { height: 203px;
+margin-bottom: 88px;
+background-position: 0 -521px; }
+
+#section3 p { width: 657px;
+top: 85px;
+left: 43px; }
+
+#section3 .linkage { bottom: 20px;
+right: 275px; }
+
+.amex-first { background-position: 0 -727px !important; }
+
+/**************************** footer *****************************************/
+
+footer { width: 1024px;
+margin: 0 auto 60px auto;
+background: url(../images/simple-footer-bg.png) left top no-repeat;
+position: relative; }
+
+footer li { float: left; }
+
+footer ul { overflow: hidden;
+width: 478px;
+height: 43px; }
+
+.footertitle
+{ background: url(../images/sprite-nav.jpg) 0 -1282px no-repeat;
+margin-top: 11px;
+width: 570px;
+height: 39px; }
+
+footer li a { display: block;
+height: 43px;
+background: url(../images/sprite-simple-nav.png) left top no-repeat;
+text-indent: -9999px; }
+
+#legallinks { position: absolute;
+right: 10px;
+top: 10px;
+font-size: 11px;
+text-transform: uppercase;
+color: #02d0fd; }
+
+#legallinks a { color: #02d0fd;
+letter-spacing: -0.8px;
+display: inline-block;
+margin: 0 5px; }
+
+#legallinks a:hover { color: #fff }
+
+#botnav-choose-bmo, #botnav-choose-amex { position: relative; }
+
+#botnav-why-air-miles a { width: 171px;
+background-position: 0 -540px; }
+
+#botnav-choose-bmo a { width: 153px;
+background-position: 0 -626px; }
+
+#botnav-choose-amex a { width: 154px;
+background-position: 0 -712px; }
+
+
+#botnav-why-air-miles a:hover { background-position: 0 -583px; }
+#botnav-choose-bmo a:hover { background-position: 0 -669px; }
+#botnav-choose-amex a:hover { background-position: 0 -755px; }
+
+/*
+footer { width: 1024px;
+margin: 0 auto 60px auto;
+position: relative; }
+
+footer li { float: left; }
+
+footer ul { overflow: hidden;
+width: 572px; }
+
+footer li a,
+.footertitle
+{ background: url(../images/sprite-nav.jpg) left top no-repeat; }
+
+.footertitle { background-position: 0 -1282px;
+margin-top: 11px;
+width: 570px;
+height: 39px; }
+
+footer li a { display: block;
+height: 43px;
+text-indent: -9999px; }
+
+#legallinks { position: absolute;
+right: 10px;
+top: 10px;
+font-size: 11px;
+text-transform: uppercase;
+color: #02d0fd; }
+
+#legallinks a { color: #02d0fd;
+letter-spacing: -0.8px;
+display: inline-block;
+margin: 0 5px; }
+
+#botnav-why-air-miles a { width: 104px;
+background-position: 0 -852px; }
+
+#botnav-choose-bmo a { width: 112px;
+background-position: 0 -938px; }
+
+#botnav-choose-amex a { width: 113px;
+background-position: 0 -1024px; }
+
+#botnav-earn-calculator a { width: 140px;
+background-position: 0 -1110px; }
+
+#botnav-how-it-adds-up a { width: 102px;
+background-position: 0 -1196px; }
+
+#botnav-why-air-miles a:hover { background-position: 0 -895px; }
+#botnav-choose-bmo a:hover { background-position: 0 -981px; }
+#botnav-choose-amex a:hover { background-position: 0 -1067px; }
+#botnav-earn-calculator a:hover { background-position: 0 -1153px; }
+#botnav-how-it-adds-up a:hover { background-position: 0 -1239px; }
+*/
+
+
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }  
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
